@@ -1,0 +1,42 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --snitap-sun: #FFCD1E;
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
+
+    --text: #000000;
+    --text-highlights: #000000;
+    --background: #FAFAFA;
+
+    --ff-syne: "Syne", sans-serif;
+    --ff-montserrat: "Montserrat", sans-serif;
+    --ff-inter: "Inter", sans-serif;
+    --heading-1: 700 4rem/1.25 var(--ff-syne);
+    --heading-2: 700 2.5rem/1.2 var(--ff-syne);
+    --button-label: 500 1rem/1.5 var(--ff-montserrat);
+    --span: 500 0.875rem/1.5 var(--ff-montserrat);
+}
+
+html, button {
+    font: var(--button-label);
+}
+
+h1, h2 {
+    font-family: var(--ff-syne);
+}
+
+h1 {
+    font: var(--heading-1);
+}
+
+h2 {
+    font: var(--heading-2);
+}
