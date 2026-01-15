@@ -1,7 +1,7 @@
 header.top {
-    max-width: 80rem;
+    max-width: 22.5rem;
     width: 100%;
-    padding: 1.25rem 2rem;
+    padding: 1.25rem 1.5rem;
     margin-inline: auto;
 
     display: flex;
@@ -43,5 +43,13 @@ header.top {
         justify-content: center;
 
         border-radius: 50%;
+    }
+}
+
+@media (width >= 80em) {
+    header.top {
+        max-width: 80rem;
+        padding: 1.25rem 2rem;
+
     }
 }
