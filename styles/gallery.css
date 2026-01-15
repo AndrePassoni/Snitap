@@ -1,7 +1,7 @@
 section.gallery {
     width: 100%;
-    max-width: 80rem;
-    padding: 2.5rem 2rem;
+    max-width: 22.5rem;
+    padding: 1.25rem 1.5rem;
     margin-inline: auto;
 
     & header {
@@ -18,12 +18,10 @@ section.gallery {
     }
 
     & .content {
-        margin-top: 2rem;
-        display: grid;
-        grid-template-areas: 
-        "A B B"
-        "C C D";
-        gap: 2.5rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     & figure {
@@ -41,7 +39,7 @@ section.gallery {
         }
 
         & > img {
-            height: 25rem;
+            height: 16rem;
             object-fit: cover;
             transition: scale 500ms;
         }
@@ -54,22 +52,6 @@ section.gallery {
             & figcaption {
                 transform: translateY(0);
             }
-        }
-
-        &:nth-child(1) {
-            grid-area: A;
-        }
-
-        &:nth-child(2) {
-            grid-area: B;
-        }
-
-        &:nth-child(3) {
-            grid-area: C;
-        }
-
-        &:nth-child(4) {
-            grid-area: D;
         }
     }
 
@@ -109,5 +91,43 @@ section.gallery {
     from {
         opacity: 0;
         transform: translateY(100%);
+    }
+}
+
+@media (width >= 80em) {
+    section.gallery {
+        max-width: 80rem;
+        padding: 2.5rem 2rem;
+
+        & .content {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-areas: 
+            "A B B"
+            "C C D";
+            gap: 2.5rem;
+        }
+
+        & figure {
+            & > img {
+                height: 25rem;
+            }
+
+            &:nth-child(1) {
+                grid-area: A;
+            }
+
+            &:nth-child(2) {
+                grid-area: B;
+            }
+
+            &:nth-child(3) {
+                grid-area: C;
+            }
+
+            &:nth-child(4) {
+                grid-area: D;
+            }
+        }
     }
 }

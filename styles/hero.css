@@ -44,6 +44,7 @@ section.hero {
         flex-direction: column-reverse;
         gap: 1.5rem;
         margin-top: 3rem;
+        margin-bottom: 1.5rem;
 
         & .button {
             display: flex;
@@ -230,6 +231,7 @@ section.hero {
         max-width: 80rem;
         padding: 2.5rem 2rem;
 
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
@@ -242,7 +244,9 @@ section.hero {
         }
 
         & .buttons {
+            flex-direction: row;
             gap: 2rem;
+            margin-bottom: 0;
         }
 
         & > div:nth-child(2) {
